@@ -1,5 +1,74 @@
+#bar chart visualisation for Climate deadlines per UK party
+
 import pandas as pd 
 data_path = "/content/newdeadlines.csv"
 Deadlines=  pd.read_csv(data_path, index_col=0)
 (Deadlines)
 
+#show dataset
+#actual coding for the bar graph 
+
+import pandas as pd
+import seaborn as sns 
+
+df=pd.DataFrame(Deadlines)
+
+ax=df.plot.bar(rot=0,  
+               title='Deadlines from 2020 for future commitments per UK party',
+               color=sns.color_palette("Paired"))
+ax.set_ylim([2020,2060])
+plt.xlabel("UK Party")
+plt.ylabel("Years")
+plt.title("Deadlines from 2020 for future commitments per UK party")
+plt.show()
+
+#coding for donut charts
+
+#donut chart for trees
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+
+names= ['Labour','Conservative','Green','Liberal Democrat']
+values=[100,30,70,60]
+
+fig = go.Figure(data=[go.Pie(labels=names, values=values, hole=.6, marker_colors=['#c51230','#009fe3','#6baf25','#ffb001'])])
+
+fig.update_layout(title_text="Trees planted by 2030 by UK party (in millions)")
+fig.show()
+
+#donut chart for climate change budget
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+
+names= ['Labour','Conservative','Green','Liberal Democrat']
+values=[28,5.27,100,25]
+
+fig = go.Figure(data=[go.Pie(labels=names, values=values, hole=.6, marker_colors=['#c51230','#009fe3','#6baf25','#ffb001'])])
+
+fig.update_layout(title_text="Budget for Climate Change per UK party (in billions)")
+fig.show()
+
+#donut chart for renewables
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+
+names= ['Labour','Conservative','Green','Liberal Democrat']
+values=[90,61,70,80]
+
+fig = go.Figure(data=[go.Pie(labels=names, values=values, hole=.6, marker_colors=['#c51230','#009fe3','#6baf25','#ffb001'])])
+
+fig.update_layout(title_text="Percentage of electricity generated through renewable energies by 2030 by UK party")
+fig.show()
+
+#coding of bar chart for green jobs 
+
+import pandas as pd
+d={"Party":["Labour","Conservative", "Green", "Liberal Democrat"], 
+   "Green jobs (in millions)":[1,2,1,0]}
+df = pd.DataFrame(data=d)
+
+# plot a bar chart
+ax = df.plot.bar(x="Party", y="Green jobs (in millions)", 
+                 rot=0, 
+                 color='#69b3a2', 
+                 title='Green jobs aimed to be created in order to reach net zero carbon emissions per UK party')
