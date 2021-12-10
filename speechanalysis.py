@@ -15,7 +15,7 @@ def main():
    with open('hansard-speeches-v310.csv') as source:
        reader = csv.reader(source)
  
-       file = open(f"{MPname}_speecheuglysbabe.txt", "x")
+       file = open(f"{MPname}_speeches.txt", "x")
        for row in reader:
            if row[17] == MPname:
                if remove_dashes(row[6]) > fdate - 1 and remove_dashes(row[6]) < ldate + 1:
