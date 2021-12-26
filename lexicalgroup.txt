@@ -1,8 +1,13 @@
+coal ?????
+oil ???
+
+
 sustainable
 sustainability 
 climate change
 climate crisis
 climate disaster
+climate conference
 greenhouse effect
 global warming
 renewable energy
@@ -18,8 +23,6 @@ carbon dioxide
 carbon 
 carbon footprint
 carbon capture 
-coal 
-oil
 oil spill
 water pollution 
 water waste 
@@ -30,13 +33,13 @@ air pollution
 natural disaster
 ozone
 ozone depletion
-chemicals
+chemical waste
+toxic chemicals 
 methane
 Ecosystems 
 habitat loss
 habitat destruction
 Atmosphere
-weather
 global climate
 global warming 
 fossil fuel
@@ -58,7 +61,7 @@ energy supply
 toxic wastes
 ecosystem
 environmental
-environment 
+natural environment 
 ecological 
 ecology
 pollutant
@@ -70,8 +73,7 @@ ocean
 aerosols
 temperatures
 temperature 
-power
-sources
+power source
 gases
 radiation
 natural
@@ -89,7 +91,10 @@ infrared
 climate system
 kyoto
 kyoto protocol
-forest
+deforestation
+forest protection
+environmental protection
+natural resources
 ipcc
 extreme weather
 air pollution
@@ -97,7 +102,6 @@ ecosystem
 radiative
 organisms
 gas emission
-deforestation
 sea level
 plants
 COP\d
@@ -105,6 +109,10 @@ electricity
 recycling
 green transport 
 electric vehicles
+hybrid vehicle
+hybrid car
+hybrid bus
+
 
 
  
