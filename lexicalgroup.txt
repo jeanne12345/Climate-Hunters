@@ -1,4 +1,8 @@
-Climate change
+sustainable
+sustainability 
+climate change
+climate crisis
+climate disaster
 greenhouse effect
 global warming
 renewable energy
@@ -7,41 +11,41 @@ clean energy
 renewable energy 
 green energy 
 sustainable energy 
-climate change 
+green house gas
+emissions 
+carbon emissions 
+carbon dioxide
+carbon 
+carbon footprint
+carbon capture 
+coal 
+oil
+oil spill
 water pollution 
 water waste 
-waste xxx
-water xxx
 conservation 
 biodiversity
 clean air 
 air pollution
-disaster xxx
-forest
-tsunami
-earthquake
-hurricane
 natural disaster
 ozone
+ozone depletion
 chemicals
-soil
 methane
 Ecosystems 
 habitat
 Atmosphere
 weather
-Global Climate
-Fossil fuel
-coal 
-oil
-natural gas
-water vapour
-carbon dioxide
-carbon 
-Greenhouse effect
-ultraviolet radiation
+global climate
 global warming 
-carbon footprint
+fossil fuel
+petroleum
+petrol
+natural gas
+fracking
+water vapour
+greenhouse effect
+ultraviolet radiation
 renewable sources
 drought
 pollute
@@ -58,7 +62,6 @@ ecological
 ecology
 pollutant
 nature 
-earth
 nuclear power
 solar power 
 wind power 
@@ -71,31 +74,24 @@ power
 sources
 gases
 radiation
-andor
 natural
 greenhouse effect
-dioxide
-anthropogenic
-fossil
-ghg
+cabon dioxide
 earth's surface
 fuels
-soil
 species
 convention climate
-ice
 Kyoto protocol
 unfcc
 atmospheric
 infrared
 climate system
 kyoto
-protocol
+kyoto protocol
 forest
 ipcc
-weather
-land 
-air
+extreme weather
+air pollution
 ecosystem
 radiative
 organisms
@@ -103,12 +99,10 @@ gas emission
 deforestation
 sea level
 plants
-petroleum
 COP\d
 electricity
 recycling
-sustainable
-sustainability 
+
  
  
  
