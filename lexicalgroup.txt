@@ -33,7 +33,8 @@ ozone depletion
 chemicals
 methane
 Ecosystems 
-habitat
+habitat loss
+habitat destruction
 Atmosphere
 weather
 global climate
@@ -61,7 +62,6 @@ environment
 ecological 
 ecology
 pollutant
-nature 
 nuclear power
 solar power 
 wind power 
@@ -80,6 +80,7 @@ cabon dioxide
 earth's surface
 fuels
 species
+extinction
 convention climate
 Kyoto protocol
 unfcc
