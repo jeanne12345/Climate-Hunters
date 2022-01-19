@@ -1,0 +1,35 @@
+import plotly.graph_objects as go
+!pip install chart_studio
+import chart_studio
+df = pd.read_csv("/content/new for barchart.csv")
+
+fig = go.Figure()
+fig.add_trace(go.Bar(x=df['Words'], y=df["Total Use"], hovertemplate="%{x}<br>Uses = %{y}<extra></extra>", marker=dict(color = "green")))
+fig.update_layout(
+    font=dict(
+        family="Arial",
+        size=3,
+        color="Black"
+    )
+)
+fig.update_layout(
+    title="Word Frequency: Combined Parties Overall",
+    xaxis_title="Words",
+    yaxis_title="Total Frequency",
+    title_font_size = 20,
+    font=dict(
+        family="Arial",
+        size=8,
+        color="Black"
+    )
+)
+
+
+fig.show()
+
+
+username = 'GemmaThornley' 
+api_key = 'tkCXLQ3xImGn7POF3DZ7'
+chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
+import chart_studio.plotly as py
+py.plot(fig, filename = 'Definitely a Graph', auto_open=True)
