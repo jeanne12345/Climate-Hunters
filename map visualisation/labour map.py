@@ -15,7 +15,10 @@ df=pd.read_csv("final (1).csv")
 df['id'] = df['name'].apply(lambda x: con_id_map[x])
 df.head()
 
-fig = px.choropleth_mapbox(df, locations='id', geojson=uk_con, color='lab_voter %', hover_name="name", mapbox_style="carto-positron", animation_frame="YEAR", animation_group="id", zoom=4, center = {"lat": 55, "lon": 0})
+fig = px.choropleth_mapbox(df, locations='id', geojson=uk_con, 
+                           color='lab_voter %', hover_name="name", 
+                           mapbox_style="carto-positron", animation_frame="YEAR", 
+                           animation_group="id", zoom=4, center = {"lat": 55, "lon": 0})
 fig.update_layout(width=800,
     height=900,
     autosize=False,
