@@ -1,0 +1,84 @@
+#Linking the Chart Studio account
+import chart_studio
+username='jeanne12345'
+api_key= 'p4kJKGZN4FdYkh6QUgLX'
+chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
+import chart_studio.plotly as py
+import chart_studio.tools as tls
+
+#Importing necessaries libraries
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+import pandas as pd
+
+#Code for Firsts Graph
+#Data
+names= ['Labour','Conservative','Green','Liberal Democrat']
+values=[100,30,70,60]
+
+#Coding the interactive pie chart
+fig1 = go.Figure(data=[go.Pie(labels=names, values=values, hole=.6, marker_colors=['#c51230','#009fe3','#6baf25','#ffb001'])])
+
+fig1.update_layout(title_text="Trees planted by 2030 by UK party (in millions)")
+fig1.show()
+
+#Linking the Chart Studio account
+import chart_studio
+username='jeanne12345'
+api_key= 'p4kJKGZN4FdYkh6QUgLX'
+chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
+import chart_studio.plotly as py
+import chart_studio.tools as tls
+
+#Importing the figure in Plotly studio account, auto open False because many chance we modify the chart 
+py.plot(fig1, filename='Trees planted by 2030 per party', auto_open=False)
+
+#Code for second graph
+names= ['Labour','Conservative','Green','Liberal Democrat']
+values=[28,5.27,100,25]
+
+fig2 = go.Figure(data=[go.Pie(labels=names, values=values, hole=.6, marker_colors=['#c51230','#009fe3','#6baf25','#ffb001'])])
+
+fig2.update_layout(title_text="Budget for Climate Change per UK party (in billions)")
+fig2.show()
+
+py.plot(fig2, filename='Budget for Climate Change per UK party (in billions)', auto_open=False)
+
+#Code for second graph
+import plotly.express as px
+import pandas as pd
+import chart_studio.plotly as py
+
+#Prepare the Data
+df = pd.DataFrame(dict(Party=['Labour','Conservative','Green','Liberal Democrat'],Percentage=[90,61,70,80]))
+
+#Create the interactive Graph
+fig3=px.bar(df, x='Party', y='Percentage',title='Targeted Percentage of Renewable Electricity by 2030 per Party (in billions)')
+fig3.show()
+
+py.plot(fig3, filename='Targeted Percentage of Renewable Electricity by 2030 per Party (in billions)', auto_open=False)
+
+#Import necessaries libraries  
+import pandas as pd
+
+#Import a Csv file with the data for figure 4 
+data_path = (r"/Users/jeannebrocart/Downloads/2021-2022_ BASC-YEAR-2-QM2, CW1 party action data  - Deadlines-2.csv")
+
+df= pd.read_csv(data_path)
+(df)
+
+#Import necessaries libraries
+import plotly.express as px
+import chart_studio.plotly as py
+
+#Code for figure 4 
+fig4 = px.bar(df, x="Party", color="Deadlines",
+             y='Dates',
+             title="Deadlines from 2020 for future commitments per UK party",
+             barmode='group',
+             height=600
+            )
+fig4.update_yaxes(range = [2020,2060])
+fig4.show()
+py.plot(fig4, filename='Deadlines from 2020 for future commitments per UK party', auto_open=False)
+
